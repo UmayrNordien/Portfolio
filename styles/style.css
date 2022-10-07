@@ -1,0 +1,36 @@
+/* select all elements */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+/* header, main, footer */
+header, main, footer {
+    min-width: 100vw;
+}
+/* header */
+header {
+    display: inline-flex;
+    justify-content: space-between;
+    background-color:pink;
+}
+.logo {
+    width: 3em
+}
+/* .menu {
+
+} */
+
+/* Navbar */
+.menu-list {
+    display:inline-flex;
+    list-style: none;
+}
+.menu-list li {
+    padding: 0 5px
+}
+/* main */
+.main {
+
+}
+
