@@ -6,31 +6,34 @@
 }
 /* header, main, footer */
 header, main, footer {
-    min-width: 100vw;
+    min-width: 99vw;
+    background-color:rgb(211, 211, 211);
 }
 /* header */
 header {
     display: inline-flex;
-    justify-content: space-between;
-    background-color:pink;
+    justify-content:space-between;
+    background-color:slateblue;
 }
 .logo {
-    width: 3em
+    width: 5em
 }
 /* .menu {
-
+ 
 } */
-
+ 
 /* Navbar */
 .menu-list {
     display:inline-flex;
     list-style: none;
+    color:pink
 }
 .menu-list li {
-    padding: 0 5px
+    padding: 0 10px
 }
 /* main */
 .main {
-
+ 
 }
+
 
