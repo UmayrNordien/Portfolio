@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;  
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
  
 /* header, main, footer */
@@ -19,7 +20,12 @@ header {
 }
  
 .logo {
-    width: 5em;
+    width: 8em;
+}
+
+/* body */
+body{
+  background-color:rgb(211, 211, 211);
 }
  
 h2{
@@ -71,14 +77,50 @@ form{
     display:inline-flex;
     list-style: none;
     color:pink;
-    border: 3px solid;
+    border: 2px solid;
 }
  
 .menu-list li {
     padding: 0 15px;
-    border: 3px solid;
+    border: 2px solid;
+    cursor: grab;
 }
- 
- 
- 
 
+/* links */
+
+/* unvisited link */
+a:link {
+    color: slateblue;
+}
+/* visited link */
+  a:visited {
+    color: slateblue;
+}
+/* mouse over link */
+  a:hover {
+    color: green;
+ }
+/* selected link */
+  a:active {
+    color: green;
+}
+
+.buttontop{
+  background-color: pink;
+  border: 2px solid slateblue;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: grab;
+
+}
+.buttontop.button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.buttontop .button:hover {
+  background-color: slateblue;
+}
