@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;  
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: large;
+  font-size:20px;
   font-weight: 300;
   cursor:cell;
 }
@@ -23,10 +23,13 @@ header {
 .logo {
   width: 10em;
 }
+.logo:hover{
+  
+}
 
 /* body */
 body {
-  background-image: url('https://i.postimg.cc/rFfz49SL/background-image-portfolio.png');
+  background-image: url('https://i.postimg.cc/63RpQKQr/Portfolio-image-added-brightness.png');
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
@@ -52,6 +55,7 @@ ul{
 .backgrndcolor{
   padding:15px;
   border:2px solid slateblue;
+  border-style:dotted
 }
 
 /* social media icons */
@@ -71,15 +75,29 @@ ul {
 /* images */
 .center{
   display: block;
-margin-left: auto;
-margin-right: auto;
-width: 1;
-cursor:cell
+  margin-left: auto;
+  margin-right: auto;
+  width: 1;
+  cursor:cell;
+  border: 2px dotted slateblue;
 }
 
 /* form */
 form{
 text-align-last: center;
+}
+.formstyle{
+  border: 2px dotted;
+  border-color: slateblue;
+  padding: 15px;
+  width:fit-content;
+  margin:auto;
+}
+
+/* input (form) */
+/* don't know how to apply it to the message box */
+input:focus{
+  background-color: pink;
 }
 
 /* Navbar */
@@ -98,6 +116,11 @@ cursor: cell;
 
 /* links */
 
+/*remove link underline*/
+a{
+  text-decoration: none;
+}
+
 /* unvisited link */
 a:link {
 color: slateblue;
@@ -115,14 +138,44 @@ a:active {
 color: green;
 }
 
+/* buttons */
+/* submit button */
+.submitbttn{
+  position:relative;
+  background-color: pink;
+  border: 2px solid slateblue;
+  border-style:dotted;
+  padding: 15px;
+  text-align:center;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  width: fit-content;
+  margin: auto;
+}
+.submitbttn:hover{
+  background-color:slateblue;
+  transition:5s;
+  opacity: 0.5;
+}
+
 /* back to top button */
 .buttontop{
-background-color: pink;
-border: 2px solid slateblue;
-padding: 15px;
-text-align: center;
-display: inline-block;
-display: flex;
-justify-content: center;  
-align-items: center;  
+  position:relative;
+  background-color: pink;
+  border: 2px solid slateblue;
+  border-style:dotted;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;  
+  align-items: center;  
+  width:fit-content;
+  margin:auto;
+  
+}
+.buttontop:hover{
+  background-color:slateblue;
+  transition:5s;
+  opacity: 0.5;
 }
