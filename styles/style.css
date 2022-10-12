@@ -1,126 +1,128 @@
 /* select all elements */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;  
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
+  font-weight: 300;
+  cursor:cell;
 }
- 
+
 /* header, main, footer */
 header, main, footer {
-    min-width: 99vw;
-    background-color:rgb(211, 211, 211);
+  min-width: 99vw;
 }
- 
+
 /* header */
 header {
-    display: inline-flex;
-    justify-content:space-between;
-    background-color:slateblue;
+  display: inline-flex;
+  justify-content:space-between;
 }
- 
+
 .logo {
-    width: 8em;
+  width: 10em;
 }
 
 /* body */
-body{
-  background-color:rgb(211, 211, 211);
+body {
+  background-image: url('https://i.postimg.cc/rFfz49SL/background-image-portfolio.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
 }
- 
+
 h2{
-    color:slateblue;
-    text-align-last: center;
+  color:slateblue;
+  text-align-last: center;
 }
- 
+
 h4{
-    text-align-last: center
+  text-align-last: center
 }
- 
+
 p{
-    text-align-last: center;
+  text-align-last: center;
 }
- 
+
 ul{
-    text-align-last: center;
- 
+  text-align-last: center;
 }
- 
+
+.backgrndcolor{
+  padding:15px;
+  border:2px solid slateblue;
+}
+
 /* social media icons */
 .socialMediaIcon li {
-    display: inline-flex;
-  }
-  ul {
-    list-style: none;
-  }
-  .socialMediaIcon li a {
-    display: inline-flex;
-  }
-  .socialMediaIcon {
-    text-align: center;
-  }
-   
+  display: inline-flex;
+}
+ul {
+  list-style: none;
+}
+.socialMediaIcon li a {
+  display: inline-flex;
+}
+.socialMediaIcon {
+  text-align: center;
+}
+ 
 /* images */
 .center{
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1
+  display: block;
+margin-left: auto;
+margin-right: auto;
+width: 1;
+cursor:cell
 }
- 
+
+/* form */
 form{
-    text-align-last: center;
+text-align-last: center;
 }
- 
+
 /* Navbar */
 .menu-list {
-    display:inline-flex;
-    list-style: none;
-    color:pink;
-    border: 2px solid;
+display:inline-flex;
+list-style: none;
+color:pink;
+border: 2px solid;
 }
- 
+
 .menu-list li {
-    padding: 0 15px;
-    border: 2px solid;
-    cursor: grab;
+padding: 0 15px;
+border: 2px solid;
+cursor: cell;
 }
 
 /* links */
 
 /* unvisited link */
 a:link {
-    color: slateblue;
+color: slateblue;
 }
 /* visited link */
-  a:visited {
-    color: slateblue;
+a:visited {
+color: slateblue;
 }
 /* mouse over link */
-  a:hover {
-    color: green;
- }
+a:hover {
+color: green;
+}
 /* selected link */
-  a:active {
-    color: green;
+a:active {
+color: green;
 }
 
+/* back to top button */
 .buttontop{
-  background-color: pink;
-  border: 2px solid slateblue;
-  color: white;
-  padding: 10px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: grab;
-
-}
-.buttontop.button:not(:last-child) {
-  border-right: none; /* Prevent double borders */
-}
-
-.buttontop .button:hover {
-  background-color: slateblue;
+background-color: pink;
+border: 2px solid slateblue;
+padding: 15px;
+text-align: center;
+display: inline-block;
+display: flex;
+justify-content: center;  
+align-items: center;  
 }
