@@ -7,6 +7,12 @@
   font-size:20px;
   font-weight: 300;
   cursor:cell;
+  /* list-style: none; */
+}
+ 
+::selection{
+  color: white;
+  background: slateblue;
 }
  
 /* header, main, footer */
@@ -18,13 +24,12 @@ header, main, footer {
 header {
   display: inline-flex;
   justify-content:space-between;
+  height:200px;
 }
  
 .logo {
   width: 10em;
-}
-.logo:hover{
- 
+  position:fixed;
 }
  
 /* body */
@@ -59,21 +64,6 @@ ul{
   border-style:dotted
 }
  
- 
-/* social media icons */
-.socialMediaIcon li {
-  display: inline-flex;
-}
-ul {
-  list-style: none;
-}
-.socialMediaIcon li a {
-  display: inline-flex;
-}
-.socialMediaIcon {
-  text-align: center;
-}
- 
 /* images */
 .center{
   display: block;
@@ -103,17 +93,21 @@ input:focus{
 }
  
 /* Navbar */
+.menu{
+  margin:auto;
+}
 .menu-list {
 display:inline-flex;
 list-style: none;
 width:fit-content;
+position: relative;
 }
  
 .menu-list li {
 padding: 0 15px;
 border: 2px dotted pink;
-border-right:none;
-cursor: cell;
+/* border-right:; */
+margin:0 2em;
 }
 /* applied a hover effect to give a button illusion */
 .menu-list li:hover{
@@ -123,7 +117,6 @@ cursor: cell;
 }
  
 /* links */
- 
 /*remove link underline*/
 a{
   text-decoration: none;
@@ -205,8 +198,6 @@ color: white;
   opacity: 0.5;
 }
  
- 
- 
 /* submit button */
 .submitbttn{
   position:relative;
@@ -240,10 +231,27 @@ color: white;
   align-items: center;  
   width:fit-content;
   margin:auto;
- 
 }
+ 
 .buttontop:hover{
   background-color:slateblue;
   transition:2.5s;
   opacity: 0.5;
+}
+
+@media screen and (max-width: 800px){
+  .flex-container{
+      flex-direction: column;
+  } 
+  .flex-container aside{
+      min-width:100%;
+  }
+  .flex-container main{
+      margin-left:0;
+      min-height: 50vh;
+      margin-top:auto;
+  }
+  .logo{
+      display:none;                                           /* hides the logo on smaller devices */
+  }
 }
