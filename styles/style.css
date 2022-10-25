@@ -47,7 +47,8 @@ h2{
 }
  
 h4{
-  text-align-last: center
+  text-align-last: center;
+  color:slateblue;
 }
  
 p{

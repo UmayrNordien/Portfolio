@@ -8,11 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
-    <title><em>Portfolio</em></title>
+    <title>Portfolio</title>
 </head>
 <body>
     <header>
-        <a style="color:pink" href="#home.html"><img class="logo" src="https://i.postimg.cc/kXzJmM8k/portfolio-logo.png" alt="logo"></a>
+        <a style="color:pink" href="#home.html"><img class="logo" src="https://i.postimg.cc/kXzJmM8k/portfolio-logo.png" alt="logo" loading="lazy"></a>
         <!--Menu-->    
         <nav class="menu">
                 <ul class="menu-list">
@@ -40,10 +40,26 @@
         <br>
         <h4 style="color:slateblue">Hi there, I am Umayr Nordien</h4>
         <br>
-        <img src="https://i.postimg.cc/y8XjPryW/Polish-20221009-175835777-1.jpg" alt="profile img" class="center" height="320" width="240" loading="lazy">
-        <br>
-        <img src="https://i.postimg.cc/pLg62c7x/Polish-20221013-223221801.png" alt="profile img" class="center" height="320" width="350" loading="lazy">
-        <p >Coding Student</p>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://i.postimg.cc/y8XjPryW/Polish-20221009-175835777-1.jpg" class="d-block mx-auto" alt="profileimg1" height="320" width="240" loading="lazy">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.postimg.cc/pLg62c7x/Polish-20221013-223221801.png" class="d-block mx-auto" alt="profileimg2" height="320" width="350" loading="lazy">
+              </div>
+      
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <p>Coding Student</p>
         <br>
         <h4 style="color:slateblue">About Me:</h2>
         <br>
@@ -104,7 +120,7 @@
         <section id="project.html">
         <h2 class="backgrndcolor" style="background-color:pink">P r o j e c t</h2>
         <br>
-        <h2>Recent contributuions</h2>
+        <h4>Top contributuions</h4>
         <br>
            <button class="projectlinkbutton"><a href=https://github.com/Z3R0N1NJ4/bigSeven>Big Seven</a></button>
         <br>
@@ -118,13 +134,10 @@
         <br>
            <button class="projectlinkbutton3"><a href=https://github.com/UmayrNordien/Portfolio>Portfolio</a></button>
         <br>
-        <h2>u n d e r&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c o n s t r u c t i o n</h2> <!--creates space between text-->
+        <p>u n d e r&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c o n s t r u c t i o n</p> <!--creates space between text-->
         <br>
         <br>
-        <p>Currently trying to apply myself in HTML and CSS atm </p>
-        <br>
-        <img src="https://i.postimg.cc/1zx1WrpC/Polish-20221013-234007649.jpg" alt="html amd css" class="center">
-        <br>
+     
        
         </section>
         <br>
@@ -190,6 +203,8 @@
             </div>
             <br>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>  
     <!--menu icons import-->
     <script src="https://kit.fontawesome.com/360ef7b739.js" crossorigin="anonymous"></script>
 </body>
